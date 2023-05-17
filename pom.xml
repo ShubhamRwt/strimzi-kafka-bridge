@@ -154,7 +154,7 @@
 		</dependency>
 		<dependency>
 			<groupId>io.quarkus</groupId>
-			<artifactId>quarkus-micrometer-registry-prometheus</artifactId>
+			<artifactId>quarkus-micrometer</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>io.quarkus</groupId>
@@ -190,6 +190,11 @@
 			<groupId>io.opentelemetry.instrumentation</groupId>
 			<artifactId>opentelemetry-kafka-clients-2.6</artifactId>
 			<version>${opentelemetry.alpha-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+			<version>1.10.6</version>
 		</dependency>
 		<dependency>
 			<groupId>io.prometheus.jmx</groupId>
