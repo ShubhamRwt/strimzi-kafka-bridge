@@ -405,6 +405,7 @@
 									<ignoredUsedUndeclaredDependency>io.netty:netty-common</ignoredUsedUndeclaredDependency>
 									<ignoredUsedUndeclaredDependency>jakarta.annotation:jakarta.annotation-api</ignoredUsedUndeclaredDependency>
 									<ignoredUsedUndeclaredDependency>org.quartz-scheduler:quartz</ignoredUsedUndeclaredDependency>
+									<ignoredUsedUndeclaredDependency>com.fasterxml.jackson.core:jackson-annotations</ignoredUsedUndeclaredDependency>
 								</ignoredUsedUndeclaredDependencies>
 								<ignoredUnusedDeclaredDependencies>
 									<ignoredUnusedDeclaredDependency>io.strimzi:kafka-env-var-config-provider</ignoredUnusedDeclaredDependency>
@@ -444,7 +445,7 @@
 							<goal>jar</goal>
 						</goals>
 						<configuration>
-							<sourcepath>${project.build.sourceDirectory}:${project.build.directory}/generated-sources/annotations</sourcepath>
+							<excludePackageNames>io.strimzi.kafka.bridge.http;io.strimzi.kafka.bridge.http.beans</excludePackageNames>
 							<show>public</show>
 							<failOnError>true</failOnError>
 							<failOnWarnings>true</failOnWarnings>
